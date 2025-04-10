@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vignesh S - MERN Stack Developer Portfolio"
+    />
+    <meta name="author" content="Vignesh S" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, React, Node.js, MERN, Portfolio"
+    />
+
+    <title>Vignesh S - Portfolio Website</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome for additional icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- ajax library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- AOS library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- EmailJS library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Ei8_PeQyKOfpE56DI"); // Add your EmailJS user ID here
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- header design -->
+    <div class="header">
+      <a href="#" class="logo">Vignesh<span>.</span></a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Projects</a>
+        <a href="#education">Journey</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content" data-aos="fade-right" data-aos-duration="1000">
+        <h1>Hi, I'm <span>Vignesh S</span></h1>
+        <div class="text-animate">
+          <h3>MERN Stack Developer</h3>
+        </div>
+        <p>
+          Self-taught MERN Stack Developer with a strong foundation in web
+          application development. Proficient in JavaScript, React, Node.js, and
+          MongoDB, with hands-on experience in building scalable, user-friendly
+          projects using modern frameworks and microservice architecture.
+        </p>
+
+        <div class="btn-box">
+          <a href="mailto:vignesh2409@gmail.com" target="_blank" class="btn"
+            >Hire Me</a
+          >
+          <a href="mailto:vignesh2409@gmail.com" target="_blank" class="btn"
+            >Let's Talk</a
+          >
+        </div>
+      </div>
+
+      <div class="home-soc">
+        <a href="https://www.linkedin.com/in/vigneshs2002/" target="_blank"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://github.com/Vicky-2409" target="_blank"
+          ><i class="bx bxl-github"></i
+        ></a>
+      </div>
+
+      <div class="home-imgHover"></div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+      <h2 class="heading">About <span>Me</span></h2>
+
+      <div class="about-img" data-aos="fade-right" data-aos-duration="1000">
+        <img src="img/about.jpeg" alt="A picture of Vignesh S" />
+        <span class="circle-spin"></span>
+      </div>
+
+      <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
+        <h3>MERN Stack Developer!</h3>
+        <p>
+          Passionate about continuous learning and leveraging technical
+          expertise to solve complex problems and contribute to innovative,
+          high-quality solutions. Experienced in building full-stack web
+          applications using MongoDB, Express.js, React, and Node.js.
+        </p>
+
+        <div class="btn-box btns resume-btns">
+          <a href="resume/Vignesh_S_Resume.pdf" download class="btn"
+            >Download Resume</a
+          >
+          <a href="resume/Vignesh_S_Resume.pdf" target="_blank" class="btn"
+            >View Resume</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+
+      <div class="services-container">
+        <div class="services-box" data-aos="zoom-in" data-aos-duration="800">
+          <div class="icon-container">
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <h3>Full Stack Development</h3>
+          <p>
+            I develop complete web applications from front-end to back-end using
+            the MERN stack (MongoDB, Express.js, React, Node.js).
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> RESTful API Design</li>
+            <li><i class="fas fa-check"></i> Database Schema Design</li>
+            <li><i class="fas fa-check"></i> Full-stack Integration</li>
+          </ul>
+          <div class="btn-box btns">
+            <a href="#contact" class="btn">Request Service</a>
+          </div>
+        </div>
+
+        <div
+          class="services-box"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <div class="icon-container">
+            <i class="bx bxl-react"></i>
+          </div>
+          <h3>React Development</h3>
+          <p>
+            I create responsive and interactive user interfaces using React.js,
+            Redux, and Next.js for optimal user experience.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Custom React Components</li>
+            <li><i class="fas fa-check"></i> State Management</li>
+            <li><i class="fas fa-check"></i> Performance Optimization</li>
+          </ul>
+          <div class="btn-box btns">
+            <a href="#contact" class="btn">Request Service</a>
+          </div>
+        </div>
+
+        <div
+          class="services-box"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
+          <div class="icon-container">
+            <i class="bx bx-server"></i>
+          </div>
+          <h3>Backend Development</h3>
+          <p>
+            I build robust and scalable backend systems using Node.js,
+            Express.js, MongoDB, and RESTful API architecture.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> API Development</li>
+            <li><i class="fas fa-check"></i> Authentication Systems</li>
+            <li><i class="fas fa-check"></i> Database Integration</li>
+          </ul>
+          <div class="btn-box btns">
+            <a href="#contact" class="btn">Request Service</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects section design -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Latest <span>Projects</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box" data-aos="fade-up" data-aos-duration="800">
+          <img src="img/ecommerce.jpg" alt="E-Commerce Platform" />
+          <div class="portfolio-layer">
+            <h4>E-Commerce Platform</h4>
+            <p>
+              Developed a fully functional e-commerce application with key
+              features like product search, sort, filter, and Razorpay payment
+              integration.
+            </p>
+            <div class="portfolio-buttons">
+              <a
+                href="https://github.com/Vicky-2409/Shopify"
+                class="portfolio-btn github-btn"
+                target="_blank"
+                ><i class="bx bxl-github"></i> GitHub</a
+              >
+              <a
+                href="https://vignesh.shop/"
+                class="portfolio-btn live-btn"
+                target="_blank"
+                ><i class="bx bx-link-external"></i> Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="200"
+        >
+          <img src="img/social_connect.jpg" alt="SocialConnect" />
+          <div class="portfolio-layer">
+            <h4>SocialConnect</h4>
+            <p>
+              Developing a scalable social media application with features like
+              user posts, comments, and real-time notifications.
+            </p>
+            <div class="portfolio-buttons">
+              <a href="#" class="portfolio-btn github-btn" target="_blank"
+                ><i class="bx bxl-github"></i> GitHub</a
+              >
+              <a href="#" class="portfolio-btn live-btn" target="_blank"
+                ><i class="bx bx-link-external"></i> Live Demo</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="400"
+        >
+          <img src="img/OCR_App.jpg" alt="OCR App" />
+          <div class="portfolio-layer">
+            <h4>OCR App (MERN Stack)</h4>
+            <p>
+              Implemented OCR functionality using Tesseract.js in a MERN stack
+              app to extract handwritten text from uploaded images, with results
+              stored and displayed from MongoDB.
+            </p>
+            <div class="portfolio-buttons">
+              <a
+                href="https://github.com/Vicky-2409/ocr-app"
+                class="portfolio-btn github-btn"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+              <a
+                href="https://ocr-app-frontend.onrender.com/"
+                class="portfolio-btn live-btn"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="portfolio-box"
+          data-aos="fade-up"
+          data-aos-duration="800"
+          data-aos-delay="600"
+        >
+          <img src="img/Survey_App.jpg" alt="MERN Survey Form App" />
+          <div class="portfolio-layer">
+            <h4>Survey Form App (MERN Stack)</h4>
+            <p>
+              Built and deployed a MERN stack application for collecting and
+              viewing user survey submissions with admin access.
+            </p>
+            <div class="portfolio-buttons">
+              <a
+                href="https://github.com/Vicky-2409/survey-app"
+                class="portfolio-btn github-btn"
+                target="_blank"
+              >
+                <i class="bx bxl-github"></i> GitHub
+              </a>
+              <a
+                href="https://survey-app-vrwp.onrender.com/survey"
+                class="portfolio-btn live-btn"
+                target="_blank"
+              >
+                <i class="bx bx-link-external"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- education section design -->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Journey</span></h2>
+
+      <div class="education-row">
+        <div
+          class="education-column"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h3 class="title">Experience</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>Jan 2024 - Present
+                </div>
+                <h3>Brocamp</h3>
+                <p>
+                  Working on various web development projects utilizing the MERN
+                  stack.
+                </p>
+                <p>
+                  Designing and implementing frontend interfaces with React.js
+                  and backend services with Node.js and Express.js.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="education-column"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <h3 class="title">Education</h3>
+
+          <div class="education-box">
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>2019 - 2023
+                </div>
+                <h3>
+                  B.Tech (Information Technology) - Hindusthan College of
+                  Engineering, Coimbatore
+                </h3>
+                <p>CGPA: 8.09</p>
+                <p>
+                  Gained strong fundamental knowledge in programming, data
+                  structures, and algorithms.
+                </p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>2018 - 2019
+                </div>
+                <h3>
+                  Higher Secondary (HSC) - Sri Ramakrishna Matric Higher
+                  Secondary School, Perambalur
+                </h3>
+                <p>Percentage: 73.66%</p>
+              </div>
+            </div>
+
+            <div class="education-content">
+              <div class="content">
+                <div class="year">
+                  <i class="bx bxs-calendar"></i>2016 - 2017
+                </div>
+                <h3>
+                  Secondary (SSLC) - Sri Ramakrishna Matric Higher Secondary
+                  School, Perambalur
+                </h3>
+                <p>Percentage: 89.6%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+
+      <div class="skills-row">
+        <div
+          class="skills-column"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h3 class="title">Coding Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>JavaScript <span>85%</span></h3>
+                <div class="bar"><span style="width: 85%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>React.js <span>80%</span></h3>
+                <div class="bar"><span style="width: 80%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Node.js <span>75%</span></h3>
+                <div class="bar"><span style="width: 75%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>MongoDB <span>70%</span></h3>
+                <div class="bar"><span style="width: 70%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>TypeScript <span>65%</span></h3>
+                <div class="bar"><span style="width: 65%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="skills-column"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <h3 class="title">Professional Skills</h3>
+
+          <div class="skills-box">
+            <div class="skills-content">
+              <div class="progress">
+                <h3>Web Development <span>85%</span></h3>
+                <div class="bar"><span style="width: 85%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>UI/UX Design <span>60%</span></h3>
+                <div class="bar"><span style="width: 60%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>Microservice Architecture <span>70%</span></h3>
+                <div class="bar"><span style="width: 70%"></span></div>
+              </div>
+
+              <div class="progress">
+                <h3>RESTful API Design <span>80%</span></h3>
+                <div class="bar"><span style="width: 80%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
+
+      <form
+        id="submit-form"
+        action=""
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Full Name"
+              required
+              name="FullName"
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              placeholder="Email Address"
+              required
+              name="Email"
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="number"
+              placeholder="Phone Number"
+              required
+              name="Phone"
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="text"
+              placeholder="Email Subject"
+              required
+              name="Subject"
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            name="Message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn" value="Submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- footer design -->
+    <div class="footer">
+      <div class="footer-text">
+        <p id="year">© 2025 Vignesh S | All Rights Reserved</p>
+      </div>
+
+      <div class="footer-icontop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
